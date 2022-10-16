@@ -91,7 +91,8 @@ ul {
   display: block;
   padding: 0.5rem 2rem;
   border-radius: 3rem;
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
 
   color: var(--dark-cyan);
   background-color: #fff;
@@ -120,7 +121,8 @@ ul {
   border-radius: 3rem;
 
   background-color: var(--pink);
-  font-size: var(--font-size-sm);
+  font-size: var(--font-size-xs);
+  font-weight: 700;
 
   /* TODO: add box-shadow */
 }
@@ -191,6 +193,7 @@ ul {
   background: var(--dark-cyan);
   color: white;
   padding-top: 10rem;
+  padding-bottom: 3rem;
 }
 
 svg {
@@ -208,13 +211,22 @@ svg {
   gap: 1rem;
 }
 
+.second,
+.social {
+  margin-top: 3rem;
+}
+
+.first,
+.copyright {
+  margin-top: 2rem;
+}
+
 .first {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: start;
   gap: 2rem;
-  margin-top: 2rem;
 }
 
 .location,
@@ -243,7 +255,6 @@ svg {
 }
 
 .second {
-  margin-top: 3rem;
   font-weight: 400;
   font-size: var(--font-size-md);
 }
@@ -252,6 +263,36 @@ svg {
   margin-top: 3rem;
 }
 
+.social {
+  margin-inline: auto;
+  width: 10rem;
+}
+
+.social__links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social__links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(1.2rem * 2);
+  aspect-ratio: 1;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.fab {
+  font-size: 1.2rem;
+}
+
+.rights {
+  font-size: var(--font-size-xs);
+  text-align: center;
+}
+
 /* DESKTOP STYLES */
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
 }
